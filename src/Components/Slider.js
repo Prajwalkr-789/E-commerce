@@ -1,6 +1,5 @@
 import Imges_scroll from "./Imges_scroll";
 import Mockdata from "../Utils/Mockdata.json"
-import { useEffect } from "react";
 
 const Slider = () =>{
     const slidercards = Mockdata?.maindata;

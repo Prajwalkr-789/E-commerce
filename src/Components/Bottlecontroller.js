@@ -1,6 +1,4 @@
-import Electronics from "./Electronics";
 import Mockdata from "../Utils/Mockdata.json";
-import Clothes from "./Bottle";
 import Bottle from "./Bottle";
 
 const Bottlecontroller = () => {

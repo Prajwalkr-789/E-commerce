@@ -1,4 +1,3 @@
-import Electronics from "./Electronics";
 import Mockdata from "../Utils/Mockdata.json"
 import Cap from "./Cap";
 

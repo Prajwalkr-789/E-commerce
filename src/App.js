@@ -39,28 +39,21 @@ function App() {
     <div>
       <Provider store={appstore}>
         <Router>
-          <Navbar
-            togglecart={togglecart}
-            setisauthopen={setisauthopen}
-            authopen={authopen}
-          />
+          <Navbar togglecart={togglecart} setisauthopen={setisauthopen} authopen={authopen} />
 
-          {isauthopen && (
-            <>
-              <Routes>
-                <Route path="/register" Component={Register} />
-                <Route path="/signin" Component={Signin} />
-                <Route path="/cart" Component={Cart} />
-              </Routes>
-            </>
-          )}
-          {!isauthopen && (
+          {isauthopen ? (
+            <Routes>
+              <Route path="/register" Component={Register} />
+              <Route path="/signin" Component={Signin} />
+              <Route path="/cart" Component={Cart} />
+            </Routes>
+          ) : (
             <>
               <Intro />
               <Slider />
-              {filtereditems == "All" && (
+              <Filters setfiltereditems={setfiltereditems} />
+              {filtereditems === "All" && (
                 <>
-                  <Filters setfiltereditems={setfiltereditems} />
                   <Snekaer_control />
                   <ElectronicsController />
                   <Bottlecontroller />
@@ -68,32 +61,22 @@ function App() {
                   <Capcontroller />
                 </>
               )}
-
-              {filtereditems == "Shoes" && (
+              {filtereditems === "Shoes" && (
                 <>
-                  <Filters setfiltereditems={setfiltereditems} />
                   <Snekaer_control />
                   <Bootcontroller />
                 </>
               )}
-
-              {filtereditems == "Caps" && (
+              {filtereditems === "Caps" && (
                 <>
-                  <Filters setfiltereditems={setfiltereditems} />
                   <Capcontroller />
                 </>
               )}
-              {filtereditems == "Electronics" && (
-                <>
-                  <Filters setfiltereditems={setfiltereditems} />
-                  <ElectronicsController />{" "}
-                </>
+              {filtereditems === "Electronics" && (
+                <ElectronicsController />
               )}
-              {filtereditems == "Bottles" && (
-                <>
-                  <Filters setfiltereditems={setfiltereditems} />
-                  <Bottlecontroller />
-                </>
+              {filtereditems === "Bottles" && (
+                <Bottlecontroller />
               )}
               <Footer />
             </>

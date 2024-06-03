@@ -23,7 +23,7 @@ const Intro = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-}, []);
+}, [images.length]);
 
  
 

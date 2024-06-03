@@ -1,4 +1,3 @@
-import Electronics from "./Electronics";
 import Mockdata from "../Utils/Mockdata.json"
 import Boot from "./Boot";
 
