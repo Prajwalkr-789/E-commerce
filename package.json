@@ -1,9 +1,8 @@
 {
-  "homepage": "https://Prajwalkr-789.github.io/E-commmerce",
   "name": "E-commerce",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": "./",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.0",
     "@testing-library/jest-dom": "^5.17.0",
