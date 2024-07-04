@@ -13,7 +13,7 @@ import Boot from "./Components/Boot";
 import Bootcontroller from "./Components/Bootcontroller";
 import Intro from "./Components/Intro";
 import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Cart from "./Components/Cart";
 import { Provider } from "react-redux";
 import appstore from "./Utils/appstore";

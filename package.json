@@ -1,8 +1,9 @@
 {
-  "homepage": "https://Prajwal-kr789.github.io/E_Authentication",
+  "homepage": "./",
   "name": "E-commerce",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.0",
     "@testing-library/jest-dom": "^5.17.0",
