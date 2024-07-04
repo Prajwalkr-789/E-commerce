@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbarlogo from "../Utils/Navbarlogo.png";
 // import Navbarlogo from "../Utils/Navbarlogo-removebg-preview.png";
 import { useSelector } from "react-redux";
-import Cart from "./Cart";
+// import Cart from "./Cart";
 import { Link } from "react-router-dom";
 
 const Navbar = ({togglecart,authopen,setisauthopen}) => {

@@ -1,15 +1,15 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import Imges_scroll from "./Components/Imges_scroll";
+// import Imges_scroll from "./Components/Imges_scroll";
 import Navbar from "./Components/Navbar";
-import Sneaker from "./Components/Sneaker";
-import Snekaer_control from "./Components/Snekaer_control";
+// import Sneaker from "./Components/Sneaker";
+import SneakerControl from "./Components/Snekaer_control";
 import Slider from "./Components/Slider";
-import Quickreview from "./Components/Quickreview";
+// import Quickreview from "./Components/Quickreview";
 import ElectronicsController from "./Components/ElectronicsController";
 import Bottlecontroller from "./Components/Bottlecontroller";
 import Capcontroller from "./Components/Capcontroller";
-import Boot from "./Components/Boot";
+// import Boot from "./Components/Boot";
 import Bootcontroller from "./Components/Bootcontroller";
 import Intro from "./Components/Intro";
 import Footer from "./Components/Footer";
@@ -54,7 +54,7 @@ function App() {
               <Filters setfiltereditems={setfiltereditems} />
               {filtereditems === "All" && (
                 <>
-                  <Snekaer_control />
+                  <SneakerControl />
                   <ElectronicsController />
                   <Bottlecontroller />
                   <Bootcontroller />
@@ -63,7 +63,7 @@ function App() {
               )}
               {filtereditems === "Shoes" && (
                 <>
-                  <Snekaer_control />
+                  <SneakerControl />
                   <Bootcontroller />
                 </>
               )}

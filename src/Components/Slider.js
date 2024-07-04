@@ -1,4 +1,4 @@
-import Imges_scroll from "./Imges_scroll";
+import ImagesScroll from "./Imges_scroll";
 import Mockdata from "../Utils/Mockdata.json"
 
 const Slider = () =>{
@@ -19,7 +19,7 @@ const Slider = () =>{
                     .filter((res) => res.category === "Bag")
                     .map((res, index) => (
                         <div key={index} className="inline-block">
-                            <Imges_scroll
+                            <ImagesScroll
                                 name={res.name}
                                 ratings={res.ratings}
                                 price={res.price}

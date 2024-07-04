@@ -1,7 +1,5 @@
 import Mockdata from "../Utils/Mockdata.json"
 import Sneaker from "./Sneaker";
-import { useDispatch } from 'react-redux';
-import { addItem } from '../Utils/CartSlice';
 import { useEffect, useState } from "react";
 
 const Snekaer_control = () =>{
@@ -38,7 +36,7 @@ const Snekaer_control = () =>{
         <div className={`grid ${isMobile?'':'ml-12'} grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center  p-4 rounded-2xl`}>
 
             {
-              groupcards.cards.filter((res) => res.category == "Men's Sneaker" ).map((res)=><Sneaker ress={res}  name={res.name} ratings={res.ratings} price={res.price}  ratingsCount={res.ratingsCount} img={res.img} category={res.category} seller={res.seller} shipping={res.shipping} stock={res.stock}/> )  
+              groupcards.cards.filter((res) => res.category === "Men's Sneaker" ).map((res)=><Sneaker ress={res}  name={res.name} ratings={res.ratings} price={res.price}  ratingsCount={res.ratingsCount} img={res.img} category={res.category} seller={res.seller} shipping={res.shipping} stock={res.stock}/> )  
             }
         </div>
         </div>

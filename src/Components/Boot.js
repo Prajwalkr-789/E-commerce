@@ -5,7 +5,7 @@ import { addItem } from '../Utils/CartSlice';
 
 const Boot = (props) =>{
 
-    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock} = props;
+    const {name, ratings, price, ratingsCount, img} = props;
 
     const[openquickreview,setopenquickreview] = useState(false)
 

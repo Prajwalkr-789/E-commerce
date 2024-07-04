@@ -7,7 +7,7 @@ import { addItem } from '../Utils/CartSlice';
 
 const Sneaker = (props) => {
 
-    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock,ress} = props;
+    const {name, ratings, price, ratingsCount, img,  shipping, stock} = props;
    const[openquickreview,setopenquickreview] = useState(false)
    const[isMobile,setisMobile] = useState(false)
 
@@ -39,7 +39,7 @@ const Sneaker = (props) => {
 
 <div  className={` ${isMobile ?'w-full text-center':'w-10/12 max-w-sm'}  bg-white border border-transparent rounded-lg shadow `}>
     <p>
-        <img onClick={()=>setopenquickreview(true)} className="p-8 rounded-t-lg" src={img} alt="product image" />
+        <img onClick={()=>setopenquickreview(true)} className="p-8 rounded-t-lg" src={img} alt="product" />
     </p>
     <div className="px-5 pb-5">
         <p>

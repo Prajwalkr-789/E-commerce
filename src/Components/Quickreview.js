@@ -4,7 +4,7 @@ import { addItem } from "../Utils/CartSlice";
 
 const Quickreview = (props) =>{
 
-    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock ,setopenquickreview,openquickreview,ress} = props;
+    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock ,setopenquickreview,openquickreview} = props;
     const dispatch = useDispatch();
 
     const handleadd = (name) =>{

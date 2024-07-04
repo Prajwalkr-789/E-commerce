@@ -1,16 +1,16 @@
 import { useState } from "react";
 import Quickreview from "./Quickreview";
-import { useDispatch } from 'react-redux';
-import { addItem } from '../Utils/CartSlice';
+// import { useDispatch } from 'react-redux';
+// import { addItem } from '../Utils/CartSlice';
 
 const Bottle = (props) =>{
 
-    const dispatch = useDispatch();
-    const handleadd = (name)=>{
-        dispatch(addItem(name));
-    }
+    // const dispatch = useDispatch();
+    // const handleadd = (name)=>{
+    //     dispatch(addItem(name));
+    // }
 
-    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock} = props;
+    const { img } = props;
 
     const[openquickreview,setopenquickreview] = useState(false)
 

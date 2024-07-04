@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Quickreview from './Quickreview'
+// import Quickreview from './Quickreview'
 import Showcart from './Showcart';
 import { useDispatch } from 'react-redux';
 import { removeItem,clearCart} from '../Utils/CartSlice';
 import truck from '../Utils/truck.mp4';
-import truck1 from '../Utils/truck-unscreen.gif'
+// import truck1 from '../Utils/truck-unscreen.gif'
 
 const Cart =()=> {
 

@@ -11,7 +11,7 @@ const Imges_scroll = (props) =>{
         dispatch(addItem(name));
     }
 
-    const {name, ratings, price, ratingsCount, img, category, seller, shipping, stock} = props;
+    const {name, ratings, price, ratingsCount, img,  seller, stock} = props;
 
     const[openquickreview,setopenquickreview] = useState(false)
 
